@@ -1,193 +1,194 @@
 
 <!doctype html>
 <html lang="en">
-
-	<head>
-		<meta charset="utf-8">
-
-		<title>DH Box</title>
-
-		<meta name="description" content="A presentation on DH Box">
-		<meta name="author" content="Stephen Zweibel">
-		<meta name="author" content="Patrick Smyth">
-		<meta name="author" content="Matt Gold">
-
-		<meta name="apple-mobile-web-app-capable" content="yes" />
-		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
-
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-
-		<link rel="stylesheet" href="reveal/css/reveal.css">
-		<link rel="stylesheet" href="reveal/css/theme/black.css" id="theme">
-
-		<!-- For syntax highlighting -->
-		<link rel="stylesheet" href="reveal/lib/css/zenburn.css">
-
-		<!-- If the query includes 'print-pdf', use the PDF print sheet -->
-		<script>
-			document.write( '<link rel="stylesheet" href="reveal/css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
-		</script>
-		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
-		<!--[if lt IE 9]>
-		<script src="lib/js/html5shiv.js"></script>
-		<![endif]-->
-	</head>
-
-	<body>
-
-<div class="reveal">
-<!-- Any section element inside of this container is displayed as a slide -->
-<div class="slides">
-<section>
-  <img src="images/logo.png">
-	<p>Building Cloud-Based Infrastructure <br>for Digital Humanities
-Projects</p>
-</section>
-
-<!-- Matt's stuff  -->
-<section>
-
-<section>
-<h2>Who does DH infrastructure?</h2>
-<p>Institutions</p>
-<p>Library and Archives</p>
-<p>Information Technology</p>
-</section>
-
-<section>
-<h2>Approaches to DH Infrastructure</h2>
-<p>Laptop carts</p>
-<p>Computer labs</p>
-<p>National shared resource (Dariah/Compute Canada)</p>
-</section>
-
-<section>
-<h2>Non-approaches</h2>
-<p>Personal computers</p>
-<p>Require purchase</p>
-<p>Disengage</p>
-</section>
-
-<!-- End of Matt's stuff -->
-</section>
-
-<!-- What is dh box -->
-<section>
-
-<section>
-<h2>What is DH Box?</h2>
-
-<p>Virtual computer</p>
-<p>Pre-installed DH tools</p>
-<p>Instant learning environment</p>
-
-</section>
-
-<section>
-	<img src="images/dhbox.png">
-</section>
-
-<section>
-<h2>Tools</h2>
-<p>Command line</p>
-<p>Text Editor</p>
-<p>Omeka</p>
-<p>RStudio</p>
-<p>IPython</p>
-<p>NLTK/MALLET</p>
-<p>Wordpress</p>
-</section>
-
-<section>
-<h2>DH Box Principles</h2>
-<p>Access</p>
-<p>Open source</p>
-<p>Empowerment</p>
-</section>
-
-<!-- What is DH Box? -->
-</section>
-
-<!-- Sustainable technology -->
-<section>
-<section>
-<h2>Sustainability</h2>
-<p>Preserved source code</p>
-<p>Thriving ecosystem</p>
-<p>Inputs and outputs</p>
-</section>
-
-<!-- <\!-- Might delete -\-> -->
-<!-- <section> -->
-<!-- <h2>Why build stuff?</h2> -->
-<!-- <p>Builds expertise</p> -->
-<!-- <p>Fits the environment</p> -->
-<!-- <p>Iterative</p> -->
-<!-- </section> -->
-
-<section>
-<h2>Docker</h2>
-<p>Portability</p>
-<p>Ephemerality</p>
-<p>Instant instances</p>
-</section>
-
-<section>
-<h2>What about installation?</h2>
-<p>Learning configuration important</p>
-<p>Getting to experimentation</p>
-<p>Catharsis of accomplishment</p>
-</section>
-
-<section>
-<h2>Other drawbacks</h2>
-<p>Requires technical knowledge</p>
-<p>"Illusion of ease"</p>
-</section>
-
-<section>
-<h2>Experimentation and Play</h2>
-<p>Joy of exploration</p>
-<p>Not a solution, more of an approach</p>
-<p><i>Hermeneutics of Screwing Around</i></p>
-</section>
-</section>
-<section>
-  <img src="images/logo.png">
-  <h3>Questions?</h3>
-  <p>Matthew K. Gold: @mkgold</p>
-  <p>Stephen Zweibel: @SteveZweibel</p>
-  <p>Patrick Smyth: @psmyth01</p>
-</section>
-
-</div>
-</div>
-</body>
-		<script src="reveal/lib/js/head.min.js"></script>
-		<script src="reveal/js/reveal.js"></script>
-		<script>
-
-			// Full list of configuration options available here:
-			// https://github.com/hakimel/reveal.js#configuration
-			Reveal.initialize({
-				controls: true,
-				progress: true,
-				history: true,
-				center: true,
-
-				theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
-				transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
-
-				// Optional libraries used to extend on reveal.js
-				dependencies: [
-					{ src: 'reveal/lib/js/classList.js', condition: function() { return !document.body.classList; } },
-					{ src: 'reveal/plugin/markdown/showdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-					{ src: 'reveal/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-					{ src: 'reveal/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
-					{ src: 'reveal/plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
-					{ src: 'reveal/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
-					// { src: 'reveal/plugin/remotes/remotes.js', async: true, condition: function() { return !!document.body.classList; } }
-				]
-			});
-
-		</script>
+  
+  <head>
+    <meta charset="utf-8">
+    
+    <title>DH Box</title>
+    
+    <meta name="description" content="A presentation on DH Box">
+    <meta name="author" content="Stephen Zweibel">
+    <meta name="author" content="Patrick Smyth">
+    <meta name="author" content="Matt Gold">
+    
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    
+    <link rel="stylesheet" href="reveal/css/reveal.css">
+    <link rel="stylesheet" href="reveal/css/theme/black.css" id="theme">
+    
+    <!-- For syntax highlighting -->
+    <link rel="stylesheet" href="reveal/lib/css/zenburn.css">
+    
+    <!-- If the query includes 'print-pdf', use the PDF print sheet -->
+    <script>
+      document.write( '<link rel="stylesheet" href="reveal/css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
+    </script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+    <!--[if lt IE 9]>
+	<script src="lib/js/html5shiv.js"></script>
+	<![endif]-->
+  </head>
+  
+  <body>
+    
+    <div class="reveal">
+      <!-- Any section element inside of this container is displayed as a slide -->
+      <div class="slides">
+	<section>
+	  <img src="images/logo.png">
+	  <p>Building Cloud-Based Infrastructure <br>for Digital Humanities
+	    Projects</p>
+	</section>
+	
+	<!-- Matt's stuff  -->
+	<section>
+	  
+	  <section>
+	    <h2>Who does DH infrastructure?</h2>
+	    <p>Institutions</p>
+	    <p>Library and Archives</p>
+	    <p>Information Technology</p>
+	  </section>
+	  
+	  <section>
+	    <h2>Approaches to DH Infrastructure</h2>
+	    <p>Laptop carts</p>
+	    <p>Computer labs</p>
+	    <p>National shared resource (Dariah/Compute Canada)</p>
+	  </section>
+	  
+	  <section>
+	    <h2>Non-approaches</h2>
+	    <p>Personal computers</p>
+	    <p>Require purchase</p>
+	    <p>Disengage</p>
+	  </section>
+	  
+	  <!-- End of Matt's stuff -->
+	</section>
+	
+	<!-- What is dh box -->
+	<section>
+	  
+	  <section>
+	    <h2>What is DH Box?</h2>
+	    
+	    <p>Virtual computer</p>
+	    <p>Pre-installed DH tools</p>
+	    <p>Instant learning environment</p>
+	    
+	  </section>
+	  
+	  <section>
+	    <img src="images/dhbox.png">
+	  </section>
+	  
+	  <section>
+	    <h2>Tools</h2>
+	    <p>Command line</p>
+	    <p>Text Editor</p>
+	    <p>Omeka</p>
+	    <p>RStudio</p>
+	    <p>IPython</p>
+	    <p>NLTK/MALLET</p>
+	    <p>Wordpress</p>
+	  </section>
+	  
+	  <section>
+	    <h2>DH Box Principles</h2>
+	    <p>Access</p>
+	    <p>Open source</p>
+	    <p>Empowerment</p>
+	  </section>
+	  
+	  <!-- What is DH Box? -->
+	</section>
+	
+	<!-- Sustainable technology -->
+	<section>
+	  <section>
+	    <h2>Sustainability</h2>
+	    <p>Preserved source code</p>
+	    <p>Thriving ecosystem</p>
+	    <p>Inputs and outputs</p>
+	  </section>
+	  
+	  <!-- <\!-- Might delete -\-> -->
+	  <!-- <section> -->
+	  <!-- <h2>Why build stuff?</h2> -->
+	  <!-- <p>Builds expertise</p> -->
+	  <!-- <p>Fits the environment</p> -->
+	  <!-- <p>Iterative</p> -->
+	  <!-- </section> -->
+	  
+	  <section>
+	    <h2>Docker</h2>
+	    <p>Portability</p>
+	    <p>Ephemerality</p>
+	    <p>Instant instances</p>
+	  </section>
+	  
+	  <section>
+	    <h2>What about installation?</h2>
+	    <p>Learning configuration important</p>
+	    <p>Getting to experimentation</p>
+	    <p>Catharsis of accomplishment</p>
+	  </section>
+	  
+	  <section>
+	    <h2>Other drawbacks</h2>
+	    <p>Requires technical knowledge</p>
+	    <p>"Illusion of ease"</p>
+	  </section>
+	  
+	  <section>
+	    <h2>Experimentation and Play</h2>
+	    <p>Joy of exploration</p>
+	    <p>Not a solution, more of an approach</p>
+	    <p><i>Hermeneutics of Screwing Around</i></p>
+	  </section>
+	</section>
+	<section>
+	  <img src="images/logo.png">
+	  <h3>Questions?</h3>
+	  <p>Matthew K. Gold: @mkgold</p>
+	  <p>Stephen Zweibel: @SteveZweibel</p>
+	  <p>Patrick Smyth: @psmyth01</p>
+	</section>
+	
+      </div>
+    </div>
+  </body>
+  <script src="reveal/lib/js/head.min.js"></script>
+  <script src="reveal/js/reveal.js"></script>
+  <script>
+    
+    // Full list of configuration options available here:
+    // https://github.com/hakimel/reveal.js#configuration
+    Reveal.initialize({
+	controls: true,
+	progress: true,
+	history: true,
+	center: true,
+	
+	theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+	transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+	
+	// Optional libraries used to extend on reveal.js
+	dependencies: [
+	    { src: 'reveal/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+	    { src: 'reveal/plugin/markdown/showdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+	    { src: 'reveal/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+	    { src: 'reveal/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+	    { src: 'reveal/plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+	    { src: 'reveal/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+	    // { src: 'reveal/plugin/remotes/remotes.js', async: true, condition: function() { return !!document.body.classList; } }
+	]
+    });
+    
+  </script>
+  
